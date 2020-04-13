@@ -6,29 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/liliana1/CLionProjects/Focus/game_init.c
-stdio.h
--
+C:/Users/lemon/Desktop/Domination/Focus/game_init.c
 stdlib.h
 -
+stdio.h
+-
 game_init.h
-/Users/liliana1/CLionProjects/Focus/game_init.h
+C:/Users/lemon/Desktop/Domination/Focus/game_init.h
 
-/Users/liliana1/CLionProjects/Focus/game_init.h
+C:/Users/lemon/Desktop/Domination/Focus/game_init.h
 
-/Users/liliana1/CLionProjects/Focus/input_output.c
+C:/Users/lemon/Desktop/Domination/Focus/input_output.c
 stdio.h
 -
 input_output.h
-/Users/liliana1/CLionProjects/Focus/input_output.h
+C:/Users/lemon/Desktop/Domination/Focus/input_output.h
 
-/Users/liliana1/CLionProjects/Focus/input_output.h
+C:/Users/lemon/Desktop/Domination/Focus/input_output.h
 game_init.h
-/Users/liliana1/CLionProjects/Focus/game_init.h
+C:/Users/lemon/Desktop/Domination/Focus/game_init.h
 
-/Users/liliana1/CLionProjects/Focus/main.c
-stdio.h
--
+C:/Users/lemon/Desktop/Domination/Focus/main.c
 input_output.h
-/Users/liliana1/CLionProjects/Focus/input_output.h
+C:/Users/lemon/Desktop/Domination/Focus/input_output.h
 

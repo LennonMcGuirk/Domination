@@ -1,19 +1,38 @@
-//
-// Created by Lili on 26/03/2020.
-//
-
-//
-// Created by Lili on 24/03/2020.
-//
-
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "game_init.h"
 
 void initialize_players(player players[PLAYERS_NUM]){
+    int choice;
 
-    // implement here the functionality to initialize the players
+    for (int i = 0; i < PLAYERS_NUM; i++)
+    {
+        printf("Insert players %d number\n", i+1);
+        scanf("%s", &players[i].name);
+    }
 
+    printf("%s, please choose a colour, Red (1) or Green (2):\n", players[0].name);
+    scanf("%d", &choice);
+
+    if (choice == 1)
+    {
+        printf("%s will be red and %s will be green.", players[0].name, players[1].name);
+        players[0].player_color = RED;
+        players[1].player_color = GREEN;
+    }
+    if (choice == 2)
+    {
+        printf("%s will be red and %s will be green.", players[1].name, players[0].name);
+        players[0].player_color = GREEN;
+        players[1].player_color = RED;
+    }
+
+    players[0].reserve = 0;
+    players[1].reserve = 0;
+    players[0].captured = 0;
+    players[1].captured = 0;
+    players[0].owned = 18;
+    players[1].owned = 18;
 }
 
 //Set Invalid Squares (where it is not possible to place stacks)

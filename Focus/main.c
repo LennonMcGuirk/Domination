@@ -1,9 +1,3 @@
-//
-// Created by Lili on 26/03/2020.
-//
-
-#include <stdio.h>
-
 #include "input_output.h"
 
 

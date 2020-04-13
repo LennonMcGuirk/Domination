@@ -1,6 +1,3 @@
-//
-// Created by Lili on 24/03/2020.
-//
 
 #ifndef FOCUS_GAME_INIT_H
 #define FOCUS_GAME_INIT_H
@@ -10,11 +7,12 @@
 
 #define BOARD_SIZE 8
 #define PLAYERS_NUM 2
+#define MAX_CHAR 20
 
 //colors that a piece can have
 typedef enum color {
     RED,
-    GREEN
+    GREEN,
 }color;
 
 // Square types
@@ -29,20 +27,19 @@ typedef enum square_type {
 typedef struct player{
     //the color associated with the player
     color player_color;
-    /*
-     * A player should also be characterized by:
-     * name,
-     * number of adversary's pieces captured,
-     * number of own pieces kept.
-     *
-    */
+    char name[MAX_CHAR];
+
+    struct square* reserve;
+
+    int captured;
+
+    int owned;
 }player;
 
 // A piece
 typedef struct piece {
     //the color associated with a piece
     color p_color;
-
     // This is a pointer to the next pieces
     // to create a stack. For this lab you do not have to think too much about it.
     struct piece * next;
