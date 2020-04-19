@@ -9,7 +9,7 @@ void initialize_players(player players[PLAYERS_NUM])
 
     for (int i = 0; i < PLAYERS_NUM; i++)
     {
-        printf("Insert players %d number\n", i+1);
+        printf("Insert players %d name:\n", i+1);
         scanf("%s", &players[i].name);
     }
 
