@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/lemon/Desktop/DominationProject/game_init.c
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+game_init.h
+C:/Users/lemon/Desktop/DominationProject/game_init.h
+
+C:/Users/lemon/Desktop/DominationProject/game_init.h
+stdbool.h
+-
+
+C:/Users/lemon/Desktop/DominationProject/input_output.c
+stdio.h
+-
+input_output.h
+C:/Users/lemon/Desktop/DominationProject/input_output.h
+
+C:/Users/lemon/Desktop/DominationProject/input_output.h
+game_init.h
+C:/Users/lemon/Desktop/DominationProject/game_init.h
+
+C:/Users/lemon/Desktop/DominationProject/main.c
+input_output.h
+C:/Users/lemon/Desktop/DominationProject/input_output.h
+
