@@ -5,6 +5,7 @@
 int main() {
 
     int choice = 0, turnCount = 0;
+    int X, Y;
     // declaration of the players and the board
     player players[PLAYERS_NUM];
     square board[BOARD_SIZE][BOARD_SIZE];
@@ -25,7 +26,8 @@ int main() {
             printf("\n%s what would you like to do?\n"
                    "1: Make a move.\n"
                    "2: Place a reserved piece.\n"
-                   "3: End the program early.\n", players[i].name);
+                   "3: See the composition of a specific stack.\n"
+                   "4: End the program early.\n", players[i].name);
             scanf("%d", &choice);
 
             if(choice == 1)
@@ -45,6 +47,14 @@ int main() {
             }
 
             if(choice == 3)
+            {
+                puts("Please choose the stack you would like to see.");
+                scanf("%d %d", &X, &Y);
+                printList(board[X][Y].stack);
+                requestMove(players, board, i);
+            }
+
+            if(choice == 4)
             {
                 exit(1);
             }

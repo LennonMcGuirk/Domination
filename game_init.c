@@ -105,22 +105,3 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
         }
     }
 }
-
-void printList( piece * currentPtr )
-{
-    /* if list is empty */
-    if ( currentPtr == NULL ) {
-        printf( "List is empty.\n\n" );
-    } /* end if */
-    else {
-        printf( "The list is:\n" );
-
-        /* while not the end of the list */
-        while ( currentPtr != NULL ) {
-            printf( "%d --> ", currentPtr->p_color );
-            currentPtr = currentPtr->next;
-        } /* end while */
-
-        printf( "NULL\n\n" );
-    } /* end else */
-} /* end function printList */
