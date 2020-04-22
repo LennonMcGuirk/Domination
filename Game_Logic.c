@@ -80,22 +80,22 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
         printf("\nPlease enter the co-ordinates of the space you could like to move to:\n");
         scanf("%d %d", &outputX, &outputY);
 
-        if((inputX > outputX) && ((inputX-outputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY))
+        if((inputX > outputX) && ((inputX-outputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
         {
             equal = true;
         }
 
-        if((outputX > inputX) && ((outputX-inputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY))
+        if((outputX > inputX) && ((outputX-inputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
         {
             equal = true;
         }
 
-        if((inputY > outputY) && ((inputY-outputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX))
+        if((inputY > outputY) && ((inputY-outputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
         {
             equal = true;
         }
 
-        if((outputY > inputY) && ((outputY-inputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX))
+        if((outputY > inputY) && ((outputY-inputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
         {
             equal = true;
         }
@@ -107,22 +107,22 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
                 equal = false;
                 puts("Please only choose squares within reach of your stack.");
                 scanf("%d %d", &outputX, &outputY);
-                if((inputX > outputX) && ((inputX-outputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY))
+                if((inputX > outputX) && ((inputX-outputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
                 {
                     equal = true;
                 }
 
-                if((outputX > inputX) && ((outputX-inputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY))
+                if((outputX > inputX) && ((outputX-inputX) <= board[inputX][inputY].num_pieces) && (inputY == outputY) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
                 {
                     equal = true;
                 }
 
-                if((inputY > outputY) && ((inputY-outputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX))
+                if((inputY > outputY) && ((inputY-outputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
                 {
                     equal = true;
                 }
 
-                if((outputY > inputY) && ((outputY-inputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX))
+                if((outputY > inputY) && ((outputY-inputY) <= board[inputX][inputY].num_pieces) && (inputX == outputX) && (0 <= outputX && outputX <= 7) && (0 <= outputY && outputY <= 7))
                 {
                     equal = true;
                 }
@@ -131,7 +131,20 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
 
         if (equal)
         {
-            if(board[outputX][outputY].stack->p_color != board[inputX][inputY].stack->p_color)
+            if(board[outputX][outputY].stack == NULL)
+            {
+                board[outputX][outputY].num_pieces = board[inputX][inputY].num_pieces;
+
+                while(board[inputX][inputY].num_pieces != 0)
+                {
+                    printf("We have reached here");
+                    board[outputX][outputY].stack = push(board[inputX][inputY].stack, board[outputX][outputY].stack);
+                    board[inputX][inputY].num_pieces --;
+                }
+
+            }
+
+            else if(board[outputX][outputY].stack != NULL && board[outputX][outputY].stack->p_color != board[inputX][inputY].stack->p_color)
             {
                 if(players[0].name == players[i].name)
                 {
@@ -153,7 +166,7 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
                 }
             }
 
-            else if(board[outputX][outputY].stack->p_color == board[inputX][inputY].stack->p_color)
+            else if(board[outputX][outputY].stack != NULL && board[outputX][outputY].stack->p_color == board[inputX][inputY].stack->p_color)
             {
                 if(players[0].name == players[i].name)
                 {
@@ -173,9 +186,8 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
                 }
             }
 
-            else if(board[outputX][outputY].num_pieces == 0)
+            else if(board[outputX][outputY].stack == NULL)
             {
-                players[i].owned = players[i].owned;
                 board[outputX][outputY].num_pieces = board[inputX][inputY].num_pieces;
 
                 while(board[inputX][inputY].num_pieces != 0)
@@ -184,6 +196,7 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
                     board[outputX][outputY].stack = push(board[inputX][inputY].stack, board[outputX][outputY].stack);
                     board[inputX][inputY].num_pieces --;
                 }
+
             }
 
             set_empty(&board[inputX][inputY]);
@@ -196,7 +209,7 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
                     board[outputX][outputY].num_pieces --;
                 }
             }
-            printList(board[outputX][outputY].stack);
+
             print_board(board);
         }
     }
@@ -213,25 +226,23 @@ void placeReserve(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SI
     {
         equal = true;
 
-        while (equal)
+        if (players[i].player_color == GREEN)
         {
-            if (players[i].player_color == GREEN)
-            {
-                equal = false;
                 set_green(&board[X][Y]);
                 players[i].reserved_count--;
+                players[i].owned ++;
                 print_board(board);
-            }
+        }
 
-            if (players[i].player_color == RED)
-            {
-                equal = false;
-                set_red(&board[X][Y]);
-                players[i].reserved_count--;
-                print_board(board);
-            }
+        if (players[i].player_color == RED)
+        {
+            set_red(&board[X][Y]);
+            players[i].reserved_count--;
+            players[i].owned ++;
+            print_board(board);
         }
     }
+
 
     while(!equal)
     {
@@ -264,3 +275,28 @@ void placeReserve(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SI
         }
     }
 }
+
+void printList( piece * currentPtr )
+{
+    /* if list is empty */
+    if ( currentPtr == NULL ) {
+        printf( "List is empty.\n\n" );
+    } /* end if */
+    else {
+        printf( "The list is:\n" );
+
+        /* while not the end of the list */
+        while ( currentPtr != NULL ) {
+
+            if(currentPtr->p_color == 1)
+            {
+                puts("GREEN");
+            }
+            if(currentPtr->p_color == 0)
+            {
+                puts("RED");
+            }
+            currentPtr = currentPtr->next;
+        } /* end while */
+    } /* end else */
+} /* end function printList */

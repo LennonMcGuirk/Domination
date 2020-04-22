@@ -35,14 +35,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4bfbc9f-cd2c-4ed7-8c6d-f502f5a524b5" name="Default Changelist" comment="Created a game logic file to store the main functions that allow for players to make moves.">
-      <change afterPath="$PROJECT_DIR$/Game_Logic.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game_Logic.h" afterDir="false" />
+    <list default="true" id="d4bfbc9f-cd2c-4ed7-8c6d-f502f5a524b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Logic.c" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Logic.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Logic.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Logic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/game_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/game_init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationProject.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_output.h" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587305528637</updated>
       <workItem from="1587305530996" duration="1918000" />
-      <workItem from="1587570220328" duration="2727000" />
+      <workItem from="1587570220328" duration="6330000" />
     </task>
     <task id="LOCAL-00001" summary="Created .h files to make calling variables and including libraries cleaner.">
       <created>1587572675221</created>
@@ -106,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587572675221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created a game logic file to store the main functions that allow for players to make moves.">
+      <created>1587573060166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587573060166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Quality of life changes for user I/O.">
+      <created>1587573115012</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587573115012</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,36 +132,41 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created .h files to make calling variables and including libraries cleaner." />
     <MESSAGE value="Created a game logic file to store the main functions that allow for players to make moves." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a game logic file to store the main functions that allow for players to make moves." />
+    <MESSAGE value="Quality of life changes for user I/O." />
+    <option name="LAST_COMMIT_MESSAGE" value="Quality of life changes for user I/O." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="31" key="CommitChangelistDialog2" timestamp="1587573059481">
+    <state x="306" y="31" key="CommitChangelistDialog2" timestamp="1587573114345">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="306" y="31" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1587573059481" />
-    <state width="1326" height="715" key="GridCell.Tab.0.bottom" timestamp="1587572573828">
+    <state x="306" y="31" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1587573114345" />
+    <state width="1326" height="715" key="GridCell.Tab.0.bottom" timestamp="1587578077179">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1587572573828" />
-    <state width="1326" height="715" key="GridCell.Tab.0.center" timestamp="1587572573828">
+    <state width="1326" height="715" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1587578077179" />
+    <state width="1326" height="715" key="GridCell.Tab.0.center" timestamp="1587578077179">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1587572573828" />
-    <state width="1326" height="715" key="GridCell.Tab.0.left" timestamp="1587572573828">
+    <state width="1326" height="715" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1587578077179" />
+    <state width="1326" height="715" key="GridCell.Tab.0.left" timestamp="1587578077179">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1587572573828" />
-    <state width="1326" height="715" key="GridCell.Tab.0.right" timestamp="1587572573828">
+    <state width="1326" height="715" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1587578077179" />
+    <state width="1326" height="715" key="GridCell.Tab.0.right" timestamp="1587578077179">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1587572573828" />
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1587572715298">
+    <state width="1326" height="715" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1587578077179" />
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1587573121675">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1587572715298" />
-    <state x="492" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587306485646">
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1587573121675" />
+    <state x="492" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587573209299">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="492" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.872@0.0.1368.872" timestamp="1587306485646" />
+    <state x="492" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.872@0.0.1368.872" timestamp="1587573209299" />
+    <state x="347" y="184" width="672" height="678" key="search.everywhere.popup" timestamp="1587577791102">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="347" y="184" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1587577791102" />
   </component>
 </project>

@@ -12,4 +12,6 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
 
 void placeReserve(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE], int i);
 
+void printList( piece * currentPtr );
+
 #endif //DOMINATIONPROJECT_GAME_LOGIC_H
