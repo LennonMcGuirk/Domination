@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/lemon/Desktop/DominationProject/Game_Logic.c" "C:/Users/lemon/Desktop/DominationProject/cmake-build-debug/CMakeFiles/DominationProject.dir/Game_Logic.c.obj"
   "C:/Users/lemon/Desktop/DominationProject/game_init.c" "C:/Users/lemon/Desktop/DominationProject/cmake-build-debug/CMakeFiles/DominationProject.dir/game_init.c.obj"
   "C:/Users/lemon/Desktop/DominationProject/input_output.c" "C:/Users/lemon/Desktop/DominationProject/cmake-build-debug/CMakeFiles/DominationProject.dir/input_output.c.obj"
   "C:/Users/lemon/Desktop/DominationProject/main.c" "C:/Users/lemon/Desktop/DominationProject/cmake-build-debug/CMakeFiles/DominationProject.dir/main.c.obj"

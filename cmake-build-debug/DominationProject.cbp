@@ -76,6 +76,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/lemon/Desktop/DominationProject/Definitions.h">
+			<Option target="DominationProject"/>
+		</Unit>
+		<Unit filename="C:/Users/lemon/Desktop/DominationProject/Game_Logic.c">
+			<Option target="DominationProject"/>
+		</Unit>
+		<Unit filename="C:/Users/lemon/Desktop/DominationProject/Game_Logic.h">
+			<Option target="DominationProject"/>
+		</Unit>
+		<Unit filename="C:/Users/lemon/Desktop/DominationProject/Libraries.h">
+			<Option target="DominationProject"/>
+		</Unit>
 		<Unit filename="C:/Users/lemon/Desktop/DominationProject/game_init.c">
 			<Option target="DominationProject"/>
 		</Unit>

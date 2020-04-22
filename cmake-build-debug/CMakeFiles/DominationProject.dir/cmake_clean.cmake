@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DominationProject.dir/Game_Logic.c.obj"
   "CMakeFiles/DominationProject.dir/game_init.c.obj"
   "CMakeFiles/DominationProject.dir/input_output.c.obj"
   "CMakeFiles/DominationProject.dir/main.c.obj"

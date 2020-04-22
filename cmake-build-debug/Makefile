@@ -122,6 +122,33 @@ DominationProject/fast:
 	$(MAKE) -f CMakeFiles\DominationProject.dir\build.make CMakeFiles/DominationProject.dir/build
 .PHONY : DominationProject/fast
 
+Game_Logic.obj: Game_Logic.c.obj
+
+.PHONY : Game_Logic.obj
+
+# target to build an object file
+Game_Logic.c.obj:
+	$(MAKE) -f CMakeFiles\DominationProject.dir\build.make CMakeFiles/DominationProject.dir/Game_Logic.c.obj
+.PHONY : Game_Logic.c.obj
+
+Game_Logic.i: Game_Logic.c.i
+
+.PHONY : Game_Logic.i
+
+# target to preprocess a source file
+Game_Logic.c.i:
+	$(MAKE) -f CMakeFiles\DominationProject.dir\build.make CMakeFiles/DominationProject.dir/Game_Logic.c.i
+.PHONY : Game_Logic.c.i
+
+Game_Logic.s: Game_Logic.c.s
+
+.PHONY : Game_Logic.s
+
+# target to generate assembly for a file
+Game_Logic.c.s:
+	$(MAKE) -f CMakeFiles\DominationProject.dir\build.make CMakeFiles/DominationProject.dir/Game_Logic.c.s
+.PHONY : Game_Logic.c.s
+
 game_init.obj: game_init.c.obj
 
 .PHONY : game_init.obj
@@ -212,6 +239,9 @@ help:
 	@echo ... DominationProject
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Game_Logic.obj
+	@echo ... Game_Logic.i
+	@echo ... Game_Logic.s
 	@echo ... game_init.obj
 	@echo ... game_init.i
 	@echo ... game_init.s

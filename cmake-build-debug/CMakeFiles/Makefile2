@@ -73,12 +73,12 @@ preinstall:
 CMakeFiles/DominationProject.dir/all:
 	$(MAKE) -f CMakeFiles\DominationProject.dir\build.make CMakeFiles/DominationProject.dir/depend
 	$(MAKE) -f CMakeFiles\DominationProject.dir\build.make CMakeFiles/DominationProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lemon\Desktop\DominationProject\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target DominationProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lemon\Desktop\DominationProject\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target DominationProject"
 .PHONY : CMakeFiles/DominationProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DominationProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lemon\Desktop\DominationProject\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lemon\Desktop\DominationProject\cmake-build-debug\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/DominationProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lemon\Desktop\DominationProject\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/DominationProject.dir/rule
