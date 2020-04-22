@@ -2,13 +2,7 @@
 #ifndef DOMINATIONPROJECT_GAME_INIT_H
 #define DOMINATIONPROJECT_GAME_INIT_H
 
-#endif //DOMINATIONPROJECT_GAME_INIT_H
-
-#include<stdbool.h>
-
-#define BOARD_SIZE 8
-#define PLAYERS_NUM 2
-#define MAX_CHAR 20
+#include "Libraries.h"
 
 //colors that a piece can have
 typedef enum color
@@ -35,7 +29,11 @@ typedef struct player
 
     struct square* reserve;
 
+    int reserved_count;
+
     int captured;
+
+    int removed;
 
     int owned;
 }player;
@@ -65,21 +63,20 @@ typedef struct square
 
 }square;
 
+void set_invalid(square * s);
+
+void set_empty(square * s);
+
+void set_green(square * s);
+
+void set_red(square * s);
+
 //Function to create the players
 void initialize_players(player players[PLAYERS_NUM]);
-
-//Function to take the move of a player
-void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE]);
-
-//Function to check valid choice
-int moveCheck1(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE], int x, int y, int i, bool equal);
-
-//Function to check if the chosen spot is a valid choice
-int moveCheck2(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE], int inX, int inY, int ouX, int ouY, bool equal);
-
-
 
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
+void printList( piece * currentPtr );
 
+#endif //DOMINATIONPROJECT_GAME_INIT_H
