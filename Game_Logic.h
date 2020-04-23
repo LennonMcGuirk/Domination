@@ -4,6 +4,7 @@
 #include "input_output.h"
 #include "Libraries.h"
 
+//Function prototypes
 piece * push(piece* p1, piece *top);
 
 piece * pop(piece *top, player players[PLAYERS_NUM], int i);

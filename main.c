@@ -4,30 +4,31 @@
 
 int main() {
 
+    //Initialises the integer variables to count the overall turns and the choice from menu.
     int choice = 0, turnCount = 0;
-    int X, Y;
+
     // declaration of the players and the board
     player players[PLAYERS_NUM];
     square board[BOARD_SIZE][BOARD_SIZE];
 
+    //Function calls to initialise the original game state.
     initialize_players(players);
 
     initialize_board(board);
 
     print_board(board);
 
+    //Allows for a move to be made provided neither player has no pieces remaining.
     while(players[0].owned != 0 || players[1].owned != 0)
     {
-        printf("Player %s has %d tokens remaining.\nYou have removed %d pieces and %d pieces in reserve.\n\n", players[0].name, players[0].owned, players[0].removed, players[0].reserved_count);
-        printf("Player %s has %d tokens remaining.\nYou have removed %d pieces and %d pieces in reserve.\n", players[1].name, players[1].owned, players[1].removed, players[1].reserved_count);
+        //I am only counting a turn as a full rotation i.e both players have to make a move for 1 turn to be counted.
         turnCount++;
+
+        //Runs through each players turn.
         for(int i = 0; i < PLAYERS_NUM; i++)
         {
-            printf("\n%s what would you like to do?\n"
-                   "1: Make a move.\n"
-                   "2: Place a reserved piece.\n"
-                   "3: See the composition of a specific stack.\n"
-                   "4: End the program early.\n", players[i].name);
+            printStats(players, i);
+            printMenu(players, i);
             scanf("%d", &choice);
 
             if(choice == 1)
@@ -48,6 +49,7 @@ int main() {
 
             if(choice == 3)
             {
+                int X, Y;
                 puts("Please choose the stack you would like to see.");
                 scanf("%d %d", &X, &Y);
                 printList(board[X][Y].stack);
@@ -61,18 +63,17 @@ int main() {
         }
     }
 
-    if(players[0].owned == 0 && players[1].captured == 18)
+    //Prints the winning state depending on who reaches 0 first.
+    if(players[0].owned == 0 && players[0].reserved_count == 0 && players[1].captured == 18)
     {
-        printf("\n%s is the winner.\n", players[1].name);
-        printf("\n%s captured %d stacks and removed %d pieces from the board in just %d turns.\n", players[1].name, players[1].captured, players[1].removed, turnCount);
-        printf("\n%s captured %d stacks and removed %d pieces from the board.\n", players[0].name, players[0].captured, players[0].removed);
+        winningState(players, 1, turnCount);
+        losingState(players, 0);
     }
 
-    if(players[1].owned == 0 && players[0].captured == 18)
+    if(players[1].owned == 0 && players[1].reserved_count == 0 && players[0].captured == 18)
     {
-        printf("\n%s is the winner.\n", players[0].name);
-        printf("\n%s captured %d stacks and removed %d pieces from the board in just %d turns.\n", players[0].name, players[0].captured, players[0].removed, turnCount);
-        printf("\n%s captured %d stacks and removed %d pieces from the board.\n", players[1].name, players[1].captured, players[1].removed);
+        winningState(players, 0, turnCount);
+        losingState(players, 1);
     }
 
     return 0;

@@ -36,19 +36,24 @@ void set_red(square * s)
     s->num_pieces = 1;
 }
 
+//Function to initialize the players in the game
 void initialize_players(player players[PLAYERS_NUM])
 {
+    //Initializes the choice in the menu.
     int choice;
 
+    //Takes in both players names.
     for (int i = 0; i < PLAYERS_NUM; i++)
     {
         printf("Insert players %d name:\n", i+1);
         scanf("%s", &players[i].name);
     }
 
+    //Gives the choice of colour to player 1.
     printf("%s, please choose a colour, Red (1) or Green (2):\n", players[0].name);
     scanf("%d", &choice);
 
+    //Allocates the colours.
     if (choice == 1)
     {
         printf("%s will be red and %s will be green.", players[0].name, players[1].name);
@@ -61,7 +66,12 @@ void initialize_players(player players[PLAYERS_NUM])
         players[0].player_color = GREEN;
         players[1].player_color = RED;
     }
+    //Calls to allocate misc values.
+    allocation(players);
+}
 
+void allocation(player players[PLAYERS_NUM])
+{
     players[0].reserved_count = 0;
     players[1].reserved_count = 0;
     players[0].removed = 0;
