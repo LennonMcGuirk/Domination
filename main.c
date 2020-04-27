@@ -27,26 +27,40 @@ int main() {
         //Runs through each players turn.
         for(int i = 0; i < PLAYERS_NUM; i++)
         {
+            //Checks if a player has reached the winning conditions yet.
+            winCheck(players, i, turnCount);
+            //Prints the stats of the current player and the options.
             printStats(players, i);
             printMenu(players, i);
             scanf("%d", &choice);
 
-            if(choice == 1)
+            //Choice for if the player can make a move and currently owns a piece on the board.
+            if(choice == 1 && (players[i].owned !=0))
             {
                 requestMove(players, board, i);
             }
 
+            //Choice for if the player only has pieces in reserve left.
+            if(choice == 1 && players[i].owned == 0 && players[i].reserved_count != 0)
+            {
+                printf("Sorry %s it seems you dont control anything on the board.\n", players[i].name);
+                placeReserve(players, board, i);
+            }
+
+            //Choice to place pieces in reserve but has none.
             if(choice == 2 && players[i].reserved_count == 0)
             {
                 printf("\nSorry %s you dont seem to have any pieces in reserve.\nIt is assumed you wish to make a move.\n", players[i].name);
                 requestMove(players, board, i);
             }
 
+            //Choice to place pieces in reserve.
             if(choice == 2 && players[i].reserved_count > 0)
             {
                 placeReserve(players, board, i);
             }
 
+            //Choice to see a stacks build.
             if(choice == 3)
             {
                 int X, Y;
@@ -56,25 +70,11 @@ int main() {
                 requestMove(players, board, i);
             }
 
+            //Choice to exit game.
             if(choice == 4)
             {
                 exit(1);
             }
         }
     }
-
-    //Prints the winning state depending on who reaches 0 first.
-    if(players[0].owned == 0 && players[0].reserved_count == 0 && players[1].captured == 18)
-    {
-        winningState(players, 1, turnCount);
-        losingState(players, 0);
-    }
-
-    if(players[1].owned == 0 && players[1].reserved_count == 0 && players[0].captured == 18)
-    {
-        winningState(players, 0, turnCount);
-        losingState(players, 1);
-    }
-
-    return 0;
 }

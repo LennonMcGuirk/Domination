@@ -39,15 +39,28 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game_Logic.c" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Logic.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game_Logic.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Logic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/game_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/game_init.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/input_output.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/input_output.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/linklibs.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/linklibs.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationProject.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_output.h" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +70,20 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -70,13 +97,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,7 +112,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration name="DominationProject" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DominationProject" TARGET_NAME="DominationProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DominationProject" RUN_TARGET_NAME="DominationProject">
+    <configuration name="DominationProject" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DominationProject" TARGET_NAME="DominationProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DominationProject" RUN_TARGET_NAME="DominationProject">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -102,7 +129,18 @@
       <option name="presentableId" value="Default" />
       <updated>1587305528637</updated>
       <workItem from="1587305530996" duration="1918000" />
-      <workItem from="1587570220328" duration="15448000" />
+      <workItem from="1587570220328" duration="15749000" />
+      <workItem from="1587642028419" duration="2379000" />
+      <workItem from="1587663404733" duration="3235000" />
+      <workItem from="1587666934751" duration="1864000" />
+      <workItem from="1587737867429" duration="6611000" />
+      <workItem from="1587830355160" duration="8945000" />
+      <workItem from="1587909876768" duration="9823000" />
+      <workItem from="1587919800107" duration="4746000" />
+      <workItem from="1587924737697" duration="2876000" />
+      <workItem from="1587992471485" duration="8676000" />
+      <workItem from="1588004093658" duration="1618000" />
+      <workItem from="1588005749078" duration="4357000" />
     </task>
     <task id="LOCAL-00001" summary="Created .h files to make calling variables and including libraries cleaner.">
       <created>1587572675221</created>
@@ -139,11 +177,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587578313654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added comments to code.">
+      <created>1587600406691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587600406691</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created .h files to make calling variables and including libraries cleaner." />
@@ -151,40 +196,65 @@
     <MESSAGE value="Quality of life changes for user I/O." />
     <MESSAGE value="Fixed glitch which prevented movement to empty squares." />
     <MESSAGE value="Added a menu to choose possible options at the start of each players turn." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a menu to choose possible options at the start of each players turn." />
+    <MESSAGE value="Added comments to code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments to code." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="31" key="CommitChangelistDialog2" timestamp="1587578313034">
+    <state x="365" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588003772378">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="306" y="31" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1587578313034" />
-    <state width="1326" height="712" key="GridCell.Tab.0.bottom" timestamp="1587598185837">
+    <state x="365" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1368.872@0.0.1368.872" timestamp="1588003772378" />
+    <state x="306" y="31" key="CommitChangelistDialog2" timestamp="1587600405488">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="712" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1587598185837" />
-    <state width="1326" height="712" key="GridCell.Tab.0.center" timestamp="1587598185837">
+    <state x="306" y="31" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1587600405488" />
+    <state width="1326" height="715" key="GridCell.Tab.0.bottom" timestamp="1588011186321">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="712" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1587598185837" />
-    <state width="1326" height="712" key="GridCell.Tab.0.left" timestamp="1587598185836">
+    <state width="1326" height="715" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
+    <state width="1326" height="715" key="GridCell.Tab.0.center" timestamp="1588011186321">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="712" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1587598185836" />
-    <state width="1326" height="712" key="GridCell.Tab.0.right" timestamp="1587598185837">
+    <state width="1326" height="715" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
+    <state width="1326" height="715" key="GridCell.Tab.0.left" timestamp="1588011186321">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="712" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1587598185837" />
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1587578319761">
+    <state width="1326" height="715" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
+    <state width="1326" height="715" key="GridCell.Tab.0.right" timestamp="1588011186321">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1587578319761" />
+    <state width="1326" height="715" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
+    <state width="1326" height="281" key="GridCell.Tab.1.bottom" timestamp="1587919719574">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1587919719574" />
+    <state width="1326" height="281" key="GridCell.Tab.1.center" timestamp="1587919719574">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1587919719574" />
+    <state width="1326" height="281" key="GridCell.Tab.1.left" timestamp="1587919719574">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1587919719574" />
+    <state width="1326" height="281" key="GridCell.Tab.1.right" timestamp="1587919719574">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="281" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1587919719574" />
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1587600412723">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1587600412723" />
+    <state x="380" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1587993053252">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="380" y="260" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1587993053252" />
     <state x="492" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587573209299">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="492" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.872@0.0.1368.872" timestamp="1587573209299" />
-    <state x="347" y="184" width="672" height="678" key="search.everywhere.popup" timestamp="1587596025563">
+    <state x="348" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1587915966295">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="347" y="184" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1587596025563" />
+    <state x="348" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1587915966295" />
   </component>
 </project>
