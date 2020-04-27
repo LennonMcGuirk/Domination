@@ -33,17 +33,18 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE])
 //Function to print the menu of options for each player.
 void printMenu(player players[PLAYERS_NUM], int i)
 {
-    printf("\n%s what would you like to do?\n"
+    puts("\nWhat would you like to do?\n"
            "1: Make a move.\n"
            "2: Place a reserved piece.\n"
            "3: See the composition of a specific stack.\n"
-           "4: End the program early.\n", players[i].name);
+           "4: End the program early.\n");
 }
 
 //Function to print the stats of each player.
 void printStats(player players[PLAYERS_NUM], int i)
 {
-    printf("%s, you have %d tokens remaining.\nYou have removed %d pieces and %d pieces in reserve.\n\n", players[i].name, players[i].owned, players[i].removed, players[i].reserved_count);
+    printf("\n----%s's Move----\n", players[i].name);
+    printf("\n%s, you have %d tokens remaining.\nYou have removed %d pieces and %d pieces in reserve.\n\n", players[i].name, players[i].owned, players[i].removed, players[i].reserved_count);
 }
 
 //Function to print the winner of the game.
@@ -56,5 +57,5 @@ void winningState(player players[PLAYERS_NUM], int i, int turns)
 //Function to print the loser of the game.
 void losingState(player players[PLAYERS_NUM], int i)
 {
-    printf("\n%s captured %d stacks and removed %d pieces from the board.\n", players[i].name, players[i].captured, players[i].removed);
+    printf("%s captured %d stacks and removed %d pieces from the board.\n", players[i].name, players[i].captured, players[i].removed);
 }

@@ -56,7 +56,7 @@ void initialize_players(player players[PLAYERS_NUM])
     //Allocates the colours.
     if (choice == 1)
     {
-        printf("%s will be red and %s will be green.", players[0].name, players[1].name);
+        printf("%s will be red and %s will be green.\n", players[0].name, players[1].name);
         players[0].player_color = RED;
         players[1].player_color = GREEN;
     }

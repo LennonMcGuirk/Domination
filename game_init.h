@@ -27,8 +27,6 @@ typedef struct player
     color player_color;
     char name[MAX_CHAR];
 
-    struct square* reserve;
-
     int reserved_count;
 
     int captured;
@@ -43,8 +41,7 @@ typedef struct piece
 {
     //the color associated with a piece
     color p_color;
-    // This is a pointer to the next pieces
-    // to create a stack. For this lab you do not have to think too much about it.
+    // This is a pointer to the next piece to create a stack.
     struct piece * next;
 
 }piece;
@@ -76,7 +73,7 @@ void set_red(square * s);
 void initialize_players(player players[PLAYERS_NUM]);
 
 //Function to allocate misc values
-void allocation(player players[PLAYERS_NUM])
+void allocation(player players[PLAYERS_NUM]);
 
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
