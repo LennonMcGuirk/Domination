@@ -36,7 +36,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4bfbc9f-cd2c-4ed7-8c6d-f502f5a524b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Logic.c" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Logic.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationProject.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationProject.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +119,8 @@
       <workItem from="1587924737697" duration="2876000" />
       <workItem from="1587992471485" duration="8676000" />
       <workItem from="1588004093658" duration="1618000" />
-      <workItem from="1588005749078" duration="5275000" />
+      <workItem from="1588005749078" duration="8143000" />
+      <workItem from="1588015252201" duration="1829000" />
     </task>
     <task id="LOCAL-00001" summary="Created .h files to make calling variables and including libraries cleaner.">
       <created>1587572675221</created>
@@ -173,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588011521693</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Description and example.">
+      <created>1588012429135</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588012429135</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,33 +200,34 @@
     <MESSAGE value="Added comments to code." />
     <MESSAGE value="Fixed issue with removal of piece from stacks." />
     <MESSAGE value="Improved layout of I/O and removed any redundant variables." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Added Description and example." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Description and example." />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588003772378">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="365" y="172" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1368.872@0.0.1368.872" timestamp="1588003772378" />
-    <state x="306" y="11" key="CommitChangelistDialog2" timestamp="1588012284273">
+    <state x="306" y="11" key="CommitChangelistDialog2" timestamp="1588012428461">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="306" y="11" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1588012284273" />
-    <state width="1326" height="715" key="GridCell.Tab.0.bottom" timestamp="1588011186321">
+    <state x="306" y="11" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1588012428461" />
+    <state width="1326" height="715" key="GridCell.Tab.0.bottom" timestamp="1588017106433">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
-    <state width="1326" height="715" key="GridCell.Tab.0.center" timestamp="1588011186321">
+    <state width="1326" height="715" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1588017106433" />
+    <state width="1326" height="715" key="GridCell.Tab.0.center" timestamp="1588017106433">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
-    <state width="1326" height="715" key="GridCell.Tab.0.left" timestamp="1588011186321">
+    <state width="1326" height="715" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1588017106433" />
+    <state width="1326" height="715" key="GridCell.Tab.0.left" timestamp="1588017106433">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
-    <state width="1326" height="715" key="GridCell.Tab.0.right" timestamp="1588011186321">
+    <state width="1326" height="715" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1588017106433" />
+    <state width="1326" height="715" key="GridCell.Tab.0.right" timestamp="1588017106433">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="715" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1588011186321" />
+    <state width="1326" height="715" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1588017106433" />
     <state width="1326" height="281" key="GridCell.Tab.1.bottom" timestamp="1587919719574">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -231,10 +244,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state width="1326" height="281" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1587919719574" />
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1587600412723">
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2" timestamp="1588012436590">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1587600412723" />
+    <state x="277" y="169" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1588012436590" />
     <state x="380" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1587993053252">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

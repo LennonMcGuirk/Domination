@@ -8,6 +8,16 @@
 
 C:/Users/lemon/Desktop/DominationProject/Definitions.h
 
+C:/Users/lemon/Desktop/DominationProject/Game_Logic.c
+Game_Logic.h
+C:/Users/lemon/Desktop/DominationProject/Game_Logic.h
+
+C:/Users/lemon/Desktop/DominationProject/Game_Logic.h
+input_output.h
+C:/Users/lemon/Desktop/DominationProject/input_output.h
+Libraries.h
+C:/Users/lemon/Desktop/DominationProject/Libraries.h
+
 C:/Users/lemon/Desktop/DominationProject/Libraries.h
 stdio.h
 -
@@ -18,19 +28,9 @@ stdlib.h
 Definitions.h
 C:/Users/lemon/Desktop/DominationProject/Definitions.h
 
-C:/Users/lemon/Desktop/DominationProject/game_init.c
-game_init.h
-C:/Users/lemon/Desktop/DominationProject/game_init.h
-
 C:/Users/lemon/Desktop/DominationProject/game_init.h
 Libraries.h
 C:/Users/lemon/Desktop/DominationProject/Libraries.h
-
-C:/Users/lemon/Desktop/DominationProject/input_output.c
-stdio.h
--
-input_output.h
-C:/Users/lemon/Desktop/DominationProject/input_output.h
 
 C:/Users/lemon/Desktop/DominationProject/input_output.h
 Libraries.h

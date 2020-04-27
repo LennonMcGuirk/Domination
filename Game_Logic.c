@@ -3,26 +3,28 @@
 //Function to remove the last piece of the stack
 piece * pop(piece *p1, player players[PLAYERS_NUM], int i)
 {
+    //Assigns two temp pointers
     piece * temp = p1;
     piece * prev;
 
+    //Moves down the list to the last node.
     while(temp->next != NULL)
     {
         prev = temp;
         temp = temp->next;
     }
 
-    prev->next = temp->next;
-
+    //Adds to either reserved or removed pile.
     if(temp->p_color == players[i].player_color)
     {
         players[i].reserved_count++;
     }
-    else
+    else if(temp->p_color != players[i].player_color)
     {
         players[i].removed++;
     }
 
+    //De-list the node
     prev->next = temp->next;
     free(temp);
     return p1;
@@ -70,7 +72,18 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
     check = false;
 
     //Checks the input co-ordinates and if they are valid.
-    if((board[inputX][inputY].type == VALID) && (board[inputX][inputY].stack->p_color == players[i].player_color) && (board[inputX][inputY].stack != NULL) && (board[inputX][inputY].num_pieces != 0))
+    //Specific check for empty squares and invalid squares as they dont have a colour to compare.
+    if(board[inputX][inputY]. stack == NULL)
+    {
+        check = false;
+    }
+
+    else if(board[inputX][inputY].type == INVALID)
+    {
+        check = false;
+    }
+
+    else if((board[inputX][inputY].type == VALID) && (board[inputX][inputY].stack->p_color == players[i].player_color) && (board[inputX][inputY].stack != NULL) && (board[inputX][inputY].num_pieces != 0))
     {
         check = true;
     }
@@ -81,7 +94,17 @@ void requestMove(player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZ
         puts("Please only choose squares that you currently control.");
         scanf("%d %d", &inputX, &inputY);
 
-        if((board[inputX][inputY].type == VALID) && (board[inputX][inputY].stack->p_color == players[i].player_color) && (board[inputX][inputY].stack != NULL) && (board[inputX][inputY].num_pieces != 0))
+        if(board[inputX][inputY]. stack == NULL)
+        {
+            check = false;
+        }
+
+        else if(board[inputX][inputY].type == INVALID)
+        {
+            check = false;
+        }
+
+        else if((board[inputX][inputY].type == VALID) && (board[inputX][inputY].stack->p_color == players[i].player_color) && (board[inputX][inputY].stack != NULL) && (board[inputX][inputY].num_pieces != 0))
         {
             check = true;
         }
